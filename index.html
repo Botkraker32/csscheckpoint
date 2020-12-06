@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire_Covid</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body style="background-color:rgb(158, 252, 190);">
+        <div class="cadre">
+            <!---introduction-->
+            <h1>Diagnostic Covid-19</h1>
+            <div id="al">
+            <img src="res/corana virus.jpg" alt="corana virus">
+            <p>Formulaire d’autoévaluation des symptômes de la COVID-19.
+                Le présent formulaire ne remplace pas une consultation médicale. Respectez toujours
+                les consignes que vous donne un professionnel de la santé</p>
+            </div>
+        </div>  
+        <div class="cadre">
+            <form action="">
+                <table>
+                            <!---information personnelles-->
+                    <th>
+                        Informations Personnelles
+                    </th>
+                    <tr>        
+                        <td><label for="nom">Nom</label></td>
+                        <td><input name="nom" type="text" maxlength="16" placeholder="Votre nom"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="prénom">Prénom</label></td>
+                        <td><input name="prénom" type="text" maxlength="16" placeholder="Votre nom"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="date">Date de naissance</label></td>
+                        <td><input name="date" type="date"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="adresse">adresse</label></td>
+                        <td><input name="adresse" type="text" maxlength="30" placeholder="Votre adresse"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="pays">pays</label></td>
+                        <td><input name="pays" type="text" maxlength="16" placeholder="Votre pay"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="num">Numéro de téléphone</label></td>
+                        <td><input name="num" type="tel" maxlength="13" value="+216 "></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Email">Email</label></td>
+                        <td><input name="Email" type="email" maxlength="25" placeholder="ex@gmail.com"></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+        <div class="cadre">
+            <table>
+                                <!---Maladies chroniques-->
+                <h2>Maladies chroniques</h2>
+               <p> Avez-vous des maladies chroniques ? </p>
+               <tr>
+                    <td style="display: inline;"><input name="1a" type="checkbox" style="width: 10vw;"></td>
+                    <td style="display: inline;"><label for="1a ">Maladie cardiaque</label></td>
+               </tr>
+                <tr>
+                    <td style="display: inline;"><input name="1b" type="checkbox" style="width: 10vw;"></td>
+                    <td style="display: inline;"><label for="1b">Maladie Pulmonaire</label></td>
+                </tr>
+                <tr>
+                    <td style="display: inline;"><input name="1c" type="checkbox" style="width: 10vw;"></td>
+                    <td style="display: inline;"><label for="1c">Diabète</label></td>
+               </tr>
+                <tr>
+                    <td style="display: inline;"><input name="1d" type="checkbox" style="width: 10vw;"></td>
+                    <td style="display: inline;"><label for="1d">Troubles auto-immunitaire</label></td>
+                </tr>
+            </table>
+        </div>
+        <div class="cadre">
+                                <!---Les symptomes les plus communs-->
+            <h2>
+                Les symptômes les plus communs
+            </h2>
+            <h3>Fièvre :</h3>
+               <p>Est-ce que votre température corporelle a dépassée 38° ? </p>
+               <table>
+                   <tr>
+                       <td><input name="2a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="2a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="2b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="2b">Non</label></td>
+                    </tr>
+               </table>
+               <h3>Fatigue :</h3>
+               <p>Est-ce que vous vous sentez plus ou moins fatigué récemment ? </p>
+               <table>
+                   <tr>
+                       <td><input name="3a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="3a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="3b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="3b">Non</label></td>
+                    </tr>
+               </table>
+               <h3>Toux :</h3>
+               <p>Avez-vous de la toux ? Quelle sorte ?</p>
+               <table>
+                   <tr>
+                       <td><input name="4a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="4a">Toux sèche</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="4b" type="radio"  style="width: 3vw;" ></td>
+                        <td><label for="4b">Toux régulière</label></td>
+                    </tr>
+                   <tr>
+                        <td><input name="4c" type="radio" style="width: 3vw;"></td>
+                        <td><label for="4c">Non</label></td>
+                    </tr>
+               </table>
+        </div>
+        <div class="cadre">
+                                <!---Les symptomes Sévéres-->
+            <h2>
+                Les symptômes Sévères
+            </h2>
+               <p style="font-size:25px">Avez-vous eu des difficultés à respirer ou un essoufflement ?</p>
+               <table>
+                   <tr>
+                       <td><input name="5a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="5a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="5b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="5b">Non</label></td>
+                    </tr>
+               </table>
+               <p>Avez-vous eu des douleurs ou pressions thoraciques ?</p>
+               <table>
+                   <tr>
+                       <td><input name="6a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="6a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="6b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="6b">Non</label></td>
+                    </tr>
+               </table> 
+               <p>Avez-vous eu perte de la parole ou du mouvement ?</p>
+               <table>
+                   <tr>
+                       <td><input name="7a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="7a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="7b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="7b">Non</label></td>
+                    </tr>
+               </table>
+        </div>
+        <div class="cadre">
+                                <!---Les symptomes mois communs-->
+            <h2>
+                Les symptômes moins communs
+            </h2>
+               <p style="font-size:25px">Avez-vous eu une perte du goût de l’odorat ?</p>
+               <table>
+                   <tr>
+                       <td><input name="8a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="8a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="8b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="8b">Non</label></td>
+                    </tr>
+               </table>
+               <p>Avez-vous des maux de gorge ?</p>
+               <table>
+                   <tr>
+                       <td><input name="9a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="9a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="9b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="9b">Non</label></td>
+                    </tr>
+               </table> 
+               <p>Avez-vous des maux de tête ?</p>
+               <table>
+                   <tr>
+                       <td><input name="10a" type="radio"  style="width: 3vw;" ></td>
+                       <td><label for="10a">Oui</label></td>
+                   </tr>
+                   <tr>
+                        <td><input name="10b" type="radio" style="width: 3vw;"></td>
+                        <td><label for="10b">Non</label></td>
+                    </tr>
+               </table>
+        </div>
+    </body>
+</html>

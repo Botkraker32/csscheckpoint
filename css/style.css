@@ -1,0 +1,64 @@
+.cadre
+{   
+    color: white;
+    position: center;
+    border: 1px solid black;  
+    border-radius: 8%;
+    background-image: url("../res/bg\ de\ les\ cadre.jpg");
+    background-size: fill;
+    width:60%;
+    margin-left: 20%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    padding-left: 5%;
+    padding-top: 2% ;
+    padding-bottom: 2%;
+    background-repeat: no-repeat;
+}
+.cadre >  h1
+{
+    margin-left: 10%;
+    font: bolder;
+
+}
+.cadre> #al img
+{
+    width: 15vw;
+    height: 0%;
+}
+p
+{
+    margin-left: 10px;
+    font-size: 25px;
+    font: bold;
+}
+#al
+{
+    display: flex;
+    flex-direction: row;
+}
+th
+{
+    font-size: 22px ;
+}
+table  label
+{
+    font-size: 22px;
+}
+input
+{
+    height: 20px;
+    width: 20vw;
+}
+td
+{
+    padding-top: 15px;
+}
+h2 + p
+{
+    font-size: 20px;
+}
+h3
+{
+    font: bolder;
+}
